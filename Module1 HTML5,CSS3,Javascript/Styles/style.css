@@ -1,0 +1,269 @@
+/* Reset & Base Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+a {
+  color: #ff00bf;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+header, footer {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  display: inline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+h2 {
+  border-bottom: 2px solid #004080;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Exercise 3: Welcome Banner ===== */
+#welcomeBanner {
+  background-color: #0084ffaa;
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #d62727dd;
+}
+
+/* ===== Exercise 4: Image Gallery ===== */
+#galleryTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+#galleryTable caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+#galleryTable td {
+  padding: 5px;
+  text-align: center;
+}
+
+.event-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #004080;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-image:hover,
+.event-image:focus {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* ===== Exercise 5: Event Registration Form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select,
+form textarea {
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #004080;
+  outline: none;
+}
+
+form textarea {
+  min-height: 80px;
+}
+
+form button[type="submit"] {
+  margin-top: 1.5rem;
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #002950;
+}
+
+output {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* ===== Exercise 6: Feedback Section (Key Events, Clicks, etc) ===== */
+#feedbackTextarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#charCount {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+/* ===== Exercise 7: Video Section ===== */
+#promoVideo {
+  display: block;
+  max-width: 100%;
+  margin: 1rem 0 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* ===== Exercise 8: User Preferences Controls ===== */
+#clearPreferencesBtn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#clearPreferencesBtn:hover {
+  background-color: #b52b27;
+}
+
+/* ===== Exercise 9: Geolocation Button and Output ===== */
+#findNearbyBtn {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#findNearbyBtn:hover {
+  background-color: #002950;
+}
+
+#geoOutput {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #galleryTable td {
+    padding: 3px;
+  }
+
+  .event-image {
+    width: 100px;
+    height: 70px;
+  }
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

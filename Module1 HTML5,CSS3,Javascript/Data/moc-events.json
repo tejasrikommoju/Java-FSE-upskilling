@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Spring Music Festival",
+    "date": "2025-06-15",
+    "category": "Music",
+    "location": "City Park",
+    "seatsAvailable": 150,
+    "fee": 20,
+    "description": "Enjoy live performances from local bands."
+  },
+  {
+    "id": 2,
+    "name": "Community Yoga Workshop",
+    "date": "2025-06-20",
+    "category": "Wellness",
+    "location": "Community Center",
+    "seatsAvailable": 30,
+    "fee": 10,
+    "description": "A beginner-friendly yoga session for all ages."
+  },
+  {
+    "id": 3,
+    "name": "Artisan Craft Fair",
+    "date": "2025-07-01",
+    "category": "Market",
+    "location": "Downtown Plaza",
+    "seatsAvailable": 100,
+    "fee": 0,
+    "description": "Browse and buy crafts from local artisans."
+  },
+  {
+    "id": 4,
+    "name": "Tech Innovations Meetup",
+    "date": "2025-06-25",
+    "category": "Technology",
+    "location": "Library Auditorium",
+    "seatsAvailable": 50,
+    "fee": 15,
+    "description": "Discuss the latest trends in technology."
+  },
+  {
+    "id": 5,
+    "name": "Summer Food Truck Rally",
+    "date": "2025-06-18",
+    "category": "Food",
+    "location": "Market Square",
+    "seatsAvailable": 200,
+    "fee": 0,
+    "description": "Taste delicious meals from various food trucks."
+  }
+]
+
+  
+
+
+
+

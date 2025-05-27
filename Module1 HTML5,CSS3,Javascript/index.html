@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Local Community Event Portal</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="javascript/main.js" defer></script>
+        <script src="javascript/form-handler.js" defer></script>
+      </head>
+      
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="help.html" target="_blank" rel="noopener noreferrer">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome Banner -->
+  <section id="home">
+    <div id="welcomeBanner">
+      <h1>Welcome to the Local Community Event Portal</h1>
+      <p>Get involved and join our upcoming events! 
+        <span class="highlight special-offer">Special Offer: Register today!</span>
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- Events Section -->
+    <section id="events">
+      <h2>Upcoming Events</h2>
+
+      <!-- Event Articles -->
+      <article class="event-card">
+        <h3 class="highlight">Community Clean-Up Drive</h3>
+        <p>Join us to clean up the local park this Saturday.</p>
+        <button class="registerBtn" id="registerCleanup">Register</button>
+      </article>
+
+      <article class="event-card">
+        <h3 class="highlight">Baking Workshop</h3>
+        <p>Learn baking tips and tricks from professionals.</p>
+        <button class="registerBtn" id="registerBaking">Register</button>
+      </article>
+
+      <!-- Image Gallery Table -->
+      <section id="gallery">
+        <h2>Event Photo Gallery</h2>
+        <table>
+          <caption>Photos from Recent Community Events</caption>
+          <tbody>
+            <tr>
+              <td><img src="images/event1.jpg" alt="Community Cleanup" title="Community Cleanup" class="gallery-image" /></td>
+              <td><img src="images/event2.jpg" alt="Baking Workshop" title="Baking Workshop" class="gallery-image" /></td>
+              <td><img src="images/event3.jpg" alt="Music Festival" title="Music Festival" class="gallery-image" /></td>
+            </tr>
+            <tr>
+              <td><img src="images/event4.jpg" alt="Art Fair" title="Art Fair" class="gallery-image" /></td>
+              <td><img src="images/event5.jpg" alt="Tech Talk" title="Tech Talk" class="gallery-image" /></td>
+              <td><img src="images/event6.jpg" alt="Charity Run" title="Charity Run" class="gallery-image" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Promo Video -->
+      <section id="promoVideo">
+        <h2>Event Promo Video</h2>
+        <video id="promo" controls>
+          <source src="videos/promo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p id="videoStatus" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration">
+      <h2>Register for an Event</h2>
+      <form id="registrationForm" novalidate>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required />
+
+        <label for="eventType">Event Type:</label>
+        <select id="eventType" name="eventType" required>
+          <option value="" disabled selected>Select an event</option>
+          <option value="cleanup">Community Clean-Up Drive</option>
+          <option value="baking">Baking Workshop</option>
+          <option value="music">Music Festival</option>
+        </select>
+
+        <label for="message">Message (Optional):</label>
+        <textarea id="message" name="message" placeholder="Your comments or questions" rows="4"></textarea>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+
+        <output id="confirmation"></output>
+
+        <p id="eventFeeDisplay"></p>
+
+        <button type="submit" id="submitBtn">Submit Registration</button>
+      </form>
+
+      <button id="clearPreferencesBtn">Clear Preferences</button>
+    </section>
+
+    <!-- Geolocation Section -->
+    <section id="location">
+      <h2>Find Nearby Events</h2>
+      <button id="findNearbyBtn">Find Nearby Events</button>
+      <p id="geoStatus" aria-live="polite"></p>
+      <p id="coordinates" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <address>
+      Local Community Center<br />
+      123 Main Street<br />
+      Cityville, Country<br />
+      Phone: <a href="tel:+1234567890">+1 (234) 567-890</a><br />
+      Email: <a href="mailto:info@communityportal.com">info@communityportal.com</a>
+    </address>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Local Community Event Portal</p>
+  </footer>
+
+</body>
+</html>
